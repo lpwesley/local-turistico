@@ -1,0 +1,108 @@
+/* Hero section */
+.hero {
+  margin-bottom: 2.5rem;
+}
+
+.hero img {
+  width: 100%;
+  aspect-ratio: 1120 / 660;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.hero figcaption {
+  margin-top: 1.5rem;
+  font: var(--subtitle);
+  text-align: center;
+}
+
+/* Tourist spots section */
+.tourist-spots {
+  padding-block: 2.5rem;
+}
+
+.section-header {
+  margin-bottom: 2.5rem;
+}
+
+.section-header .headline {
+  margin-bottom: 0.125rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Destinations */
+.destination + .destination {
+  margin-top: 3rem;
+}
+
+.destination > img {
+  width: 100%;
+  aspect-ratio: 1120 / 350;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.25rem;
+}
+
+.destination h3 {
+  margin-bottom: 0.25rem;
+}
+
+/* Destination categories */
+.destination-categories {
+  margin-top: 1.25rem;
+}
+
+.destination-categories .headline {
+  color: var(--text-secondary);
+  text-transform: none;
+}
+
+.destination-categories ul {
+  margin-top: 0.25rem;
+  padding-left: 1.5rem;
+  font-weight: 700;
+}
+
+.category-history {
+  color: var(--accent-blue);
+}
+
+.category-budget {
+  color: var(--accent-orange);
+}
+
+.category-family {
+  color: var(--accent-pink);
+}
+
+.category-couples {
+  color: var(--accent-purple);
+}
+
+/* Conclusion */
+.conclusion {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  .hero {
+    margin-bottom: 2.5rem;
+  }
+
+  .tourist-spots {
+    padding-block: 4rem 2.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 4rem;
+  }
+
+  .destination + .destination {
+    margin-top: 3rem;
+  }
+}

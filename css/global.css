@@ -1,28 +1,125 @@
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
+/* Global variables */
 :root {
+  /* Background and borders */
   --background-default: #f5f4f0;
   --border-primary: #d9d9d9;
 
+  /* Text colors */
   --text-primary: #1b1b1b;
   --text-secondary: #333333;
   --text-tertiary: #696969;
   --text-headline: #e1624f;
 
+  /* Accent colors */
   --accent-blue: #0c51a7;
   --accent-orange: #e95e10;
   --accent-pink: #e5245e;
-  --accent-purple: #591b98 --font-family: "Open Sans", sans-serif;
+  --accent-purple: #591b98;
 
+  /* Font family */
   --font-family: "Open Sans", sans-serif;
+
+  /* Typography */
   --h1: 700 2.25rem/1.4 var(--font-family);
   --h2: 700 2rem/1.4 var(--font-family);
   --h3: 700 1.75rem/1.4 var(--font-family);
+
   --headline: 700 1rem/1.4 var(--font-family);
   --paragraph: 400 1rem/1.5 var(--font-family);
   --subtitle: italic 400 1rem/1.5 var(--font-family);
+
+  /* Border radius */
+  --radius-lg: 1.75rem;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 20rem;
+  background-color: var(--background-default);
+  color: var(--text-secondary);
+  font: var(--paragraph);
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Headings */
+h1 {
+  font: var(--h1);
+  color: var(--text-primary);
+}
+
+h2 {
+  font: var(--h2);
+  color: var(--text-primary);
+}
+
+h3 {
+  font: var(--h3);
+  color: var(--text-primary);
+}
+
+/* Text styles */
+.headline {
+  font: var(--headline);
+  color: var(--text-headline);
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font: var(--subtitle);
+  color: var(--text-tertiary);
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Lists */
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+/* Dividers */
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-primary);
+}
+
+/* Accessibility */
+:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  .container {
+    padding: 5.5rem 5rem;
+  }
 }

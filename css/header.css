@@ -1,0 +1,15 @@
+/* Page header */
+.page-header {
+  margin-bottom: 2.5rem;
+}
+
+.page-header .headline {
+  margin-bottom: 0.5rem;
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  .page-header {
+    margin-bottom: 2.75rem;
+  }
+}
