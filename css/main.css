@@ -1,4 +1,6 @@
-/* Hero section */
+/* ==========================================================================
+   Hero (Busan presentation)
+   ========================================================================== */
 .hero {
   margin-bottom: 2.5rem;
 }
@@ -12,17 +14,18 @@
 
 .hero figcaption {
   margin-top: 1.5rem;
-  font: var(--subtitle);
   text-align: center;
 }
 
-/* Tourist spots section */
+/* ==========================================================================
+   Tourist spots
+   ========================================================================== */
 .tourist-spots {
-  padding-block: 2.5rem;
+  padding-block: var(--section-gap);
 }
 
 .section-header {
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--section-gap);
 }
 
 .section-header .headline {
@@ -38,9 +41,10 @@
   margin-top: 3rem;
 }
 
+/* Mobile: 16:9 keeps the image tall enough and uncropped */
 .destination > img {
   width: 100%;
-  aspect-ratio: 1120 / 350;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: var(--radius-lg);
   margin-bottom: 1.25rem;
@@ -55,14 +59,12 @@
   margin-top: 1.25rem;
 }
 
-.destination-categories .headline {
-  color: var(--text-secondary);
-  text-transform: none;
+.category-label {
+  font: var(--headline);
 }
 
 .destination-categories ul {
   margin-top: 0.25rem;
-  padding-left: 1.5rem;
   font-weight: 700;
 }
 
@@ -82,27 +84,24 @@
   color: var(--accent-purple);
 }
 
-/* Conclusion */
+/* ==========================================================================
+   Conclusion
+   ========================================================================== */
 .conclusion {
   margin-top: 2.5rem;
   text-align: center;
 }
 
+/* Tablet and up: Figma proportion (1120 x 350) */
+@media (min-width: 48rem) {
+  .destination > img {
+    aspect-ratio: 1120 / 350;
+  }
+}
+
 /* Desktop */
 @media (min-width: 64rem) {
-  .hero {
-    margin-bottom: 2.5rem;
-  }
-
   .tourist-spots {
-    padding-block: 4rem 2.5rem;
-  }
-
-  .section-header {
-    margin-bottom: 4rem;
-  }
-
-  .destination + .destination {
-    margin-top: 3rem;
+    padding-bottom: 2.5rem;
   }
 }

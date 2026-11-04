@@ -2,16 +2,14 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- SEO -->
+    <title>Conheça Busan | 3 destinos turísticos imperdíveis</title>
     <meta
       name="description"
       content="Conheça Busan, na Coreia do Sul, e descubra três destinos turísticos imperdíveis, incluindo templos históricos e parques."
     />
-    <meta name="robots" content="index, follow" />
-
-    <title>Conheça Busan | 3 destinos turísticos imperdíveis</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,8 +27,10 @@
     <div class="container">
       <!-- Cabeçalho -->
       <header class="page-header">
-        <p class="headline">Seu próximo destino:</p>
-        <h1>Conheça Busan</h1>
+        <hgroup>
+          <p class="headline">Seu próximo destino:</p>
+          <h1>Conheça Busan</h1>
+        </hgroup>
       </header>
 
       <!-- Conteúdo principal -->
@@ -38,12 +38,19 @@
         <!-- Apresentação de Busan -->
         <figure class="hero">
           <img
-            src="assets/images/Image_01.png"
-            alt="Vista panorâmica da cidade de Busan, na Coreia do Sul"
+            src="assets/images/Image_01.webp"
+            srcset="
+              assets/images/Image_01-800.webp   800w,
+              assets/images/Image_01.webp      1467w
+            "
+            sizes="(min-width: 80rem) 70rem, (min-width: 64rem) calc(100vw - 10rem), (min-width: 48rem) calc(100vw - 5rem), calc(100vw - 2.5rem)"
+            width="1467"
+            height="825"
+            alt="Vista de Busan ao anoitecer, com prédios iluminados, o porto com navios e guindastes e uma ponte estaiada sobre a baía, tendo montanhas ao fundo."
             fetchpriority="high"
           />
 
-          <figcaption>
+          <figcaption class="subtitle">
             Busan, a estrela em ascensão da Coreia do Sul, oferece de tudo,
             desde churrascarias de primeira linha até tradicionais barracas de
             comida de rua. Aqui, exploramos a segunda cidade da Coreia do Sul e
@@ -56,11 +63,12 @@
         <!-- Pontos turísticos -->
         <section class="tourist-spots" aria-labelledby="tourist-spots-title">
           <div class="section-header">
-            <p class="headline">Para os amantes de história</p>
-
-            <h2 id="tourist-spots-title">
-              Descubra 3 destinos imperdíveis em Busan
-            </h2>
+            <hgroup>
+              <p class="headline">Para os amantes de história</p>
+              <h2 id="tourist-spots-title">
+                Descubra 3 destinos imperdíveis em Busan
+              </h2>
+            </hgroup>
 
             <p>
               As atrações de Busan vão desde templos budistas centenários que
@@ -78,8 +86,15 @@
           <!-- Primeiro destino -->
           <article class="destination">
             <img
-              src="assets/images/Image_02.png"
-              alt="Templo Haedong Yonggungsa, localizado à beira-mar em Busan"
+              src="assets/images/Image_02.webp"
+              srcset="
+                assets/images/Image_02-800.webp   800w,
+                assets/images/Image_02.webp      1467w
+              "
+              sizes="(min-width: 80rem) 70rem, (min-width: 64rem) calc(100vw - 10rem), (min-width: 48rem) calc(100vw - 5rem), calc(100vw - 2.5rem)"
+              width="1467"
+              height="825"
+              alt="Construções de templo com telhados tradicionais coreanos sobre rochedos à beira-mar, cercadas por pinheiros, com ondas batendo nas pedras."
               loading="lazy"
               decoding="async"
             />
@@ -94,7 +109,7 @@
             </p>
 
             <div class="destination-categories">
-              <p class="headline">Bom para:</p>
+              <p class="category-label">Bom para:</p>
 
               <ul>
                 <li class="category-history">História</li>
@@ -105,8 +120,15 @@
           <!-- Segundo destino -->
           <article class="destination">
             <img
-              src="assets/images/Image_03.png"
-              alt="Templo Beomeo-sa, localizado nas montanhas de Busan"
+              src="assets/images/Image_03.webp"
+              srcset="
+                assets/images/Image_03-800.webp   800w,
+                assets/images/Image_03.webp      1467w
+              "
+              sizes="(min-width: 80rem) 70rem, (min-width: 64rem) calc(100vw - 10rem), (min-width: 48rem) calc(100vw - 5rem), calc(100vw - 2.5rem)"
+              width="1467"
+              height="825"
+              alt="Pavilhão de madeira vermelha com beirais curvos e telhado de telhas cinzentas, ao lado de outro edifício do templo, ao pé de uma montanha coberta de árvores."
               loading="lazy"
               decoding="async"
             />
@@ -121,7 +143,7 @@
             </p>
 
             <div class="destination-categories">
-              <p class="headline">Bom para:</p>
+              <p class="category-label">Bom para:</p>
 
               <ul>
                 <li class="category-history">História</li>
@@ -132,8 +154,15 @@
           <!-- Terceiro destino -->
           <article class="destination">
             <img
-              src="assets/images/Image_04.png"
-              alt="Parque Yongdusan, um dos pontos turísticos de Busan"
+              src="assets/images/Image_04.webp"
+              srcset="
+                assets/images/Image_04-800.webp   800w,
+                assets/images/Image_04.webp      1467w
+              "
+              sizes="(min-width: 80rem) 70rem, (min-width: 64rem) calc(100vw - 10rem), (min-width: 48rem) calc(100vw - 5rem), calc(100vw - 2.5rem)"
+              width="1467"
+              height="825"
+              alt="Praça arborizada com caminhos de pedra, jardins de arbustos podados e um pavilhão tradicional de colunas vermelhas, com prédios da cidade ao fundo."
               loading="lazy"
               decoding="async"
             />
@@ -150,7 +179,7 @@
             </p>
 
             <div class="destination-categories">
-              <p class="headline">Bom para:</p>
+              <p class="category-label">Bom para:</p>
 
               <ul>
                 <li class="category-couples">Casais</li>
@@ -177,7 +206,7 @@
       <footer class="page-footer">
         <p>
           Feito com
-          <img src="assets/icons/heart.svg" alt="" width="16" height="16" />
+          <img src="assets/icons/heart.svg" alt="amor" width="14" height="12" />
           pela Rocketseat
         </p>
       </footer>

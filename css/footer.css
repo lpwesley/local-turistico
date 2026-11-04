@@ -1,4 +1,6 @@
-/* Page footer */
+/* ==========================================================================
+   Page footer
+   ========================================================================== */
 .page-footer {
   margin-top: 4rem;
   text-align: center;
@@ -6,14 +8,14 @@
 
 .page-footer p {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 0.25rem;
 }
 
+/* Scales with the text when the user zooms or enlarges the font */
 .page-footer img {
-  width: 1rem;
-  height: 1rem;
-  display: inline-block;
+  width: 0.875rem;
+  height: auto;
 }
